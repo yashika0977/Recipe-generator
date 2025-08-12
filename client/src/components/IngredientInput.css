@@ -1,0 +1,117 @@
+/* Add styles for the input and suggestions */
+.ingredient-input .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+  }
+  
+  .ingredient-input .ingredient-input-field {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+
+  .suggestions-list {
+    position: absolute;
+    top:7.5rem;            /* Position it directly below the input field */
+    left: 12.5rem;
+    right: 0;
+    width: 26.5rem;
+    max-height: 200px;    /* Set the max height for a scrollable list */
+    overflow-y: auto;     /* Enable scrolling if content overflows */
+    background-color: white;
+    border: 1px solid #ccc; /* Border for visual separation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+    z-index: 1000;        /* Ensure it stays on top of other elements */
+    margin-top: 4px;      /* Small gap between input and suggestion list */
+    padding: 0;
+    list-style-type: none; /* Remove default list styling */
+  }
+
+  .loader {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgba(206, 206, 206, 0.2) 33%, #00ff4c 100%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg)}
+  } 
+  
+  .suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0; /* Highlight suggestion on hover */
+  }
+  
+  .ingredient-input .add-button {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ingredient-input .add-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .suggestion-dropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  
+  .remove-button {
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,107 @@
+.recipe-output {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.recipe-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.recipe-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  background: #e9f5f9;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.meta-item .icon {
+  color: #3498db;
+  margin-right: 0.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+}
+
+.ingredients-list,
+.instructions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredient-item,
+.instruction-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-notes {
+  background: #fef9e7;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 5px solid #f1c40f;
+}
+
+.placeholder {
+  font-style: italic;
+  color: #bdc3c7;
+  text-align: center;
+}
+
+
+.audio-player {
+  position: fixed; /* Fix the position relative to the viewport */
+  top: 20px; /* Adjust the distance from the top */
+  left: 20px; /* Adjust the distance from the left */
+  z-index: 1000; /* Make sure it stays on top of other elements */
+}
+
+.play-pause-btn {
+  background-color: #000000;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.play-pause-btn:hover {
+  background-color: #ddd; /* Change the background on hover */
+}
