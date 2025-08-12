@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaClock, FaUtensils, FaInfoCircle, FaThumbsUp, FaPlay, FaStop } from "react-icons/fa";
+import { FaClock, FaUtensils, FaInfoCircle, FaThumbsUp } from "react-icons/fa";
 import { GiHotMeal } from "react-icons/gi";
 import "./RecipeOutput.css";
 
@@ -59,11 +59,11 @@ const RecipeOutput = ({ recipe }) => {
   return (
     <div className="recipe-output modern-card">
       
-      <div className="audio-player">
+{/*       <div className="audio-player">
   <button onClick={togglePlay} className="play-pause-btn">
     {isPlaying ? <FaStop /> : <FaPlay />}
   </button>
-</div>
+</div> */}
 
       <div className="recipe-header">
         
